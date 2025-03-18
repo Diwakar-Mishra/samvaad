@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- linking the font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ======================================= SWIPER-JS CSS LINKS  STARTS ========================= -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- linking the bootstrap css cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- linking our own css -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- header section start -->
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-between">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="" alt="samvaad_logo">
+                </a>
+
+                <div class="text-end">
+                    <button type="button" class="btn btn-outline-light me-2">Login</button>
+                    <button type="button" class="btn btn-warning">Sign-up</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section ends -->
+    <!-- hero section starts -->
+    <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+            <div class="col-10 col-sm-8 col-lg-6">
+                <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700"
+                    height="500" loading="lazy">
+            </div>
+            <div class="col-lg-6">
+                <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image</h1>
+                <p class="lead"><span id="typed-text"></span></p>
+                <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <!-- hero section ends -->
+    <!--  page 3 starts ... create or join card options-->
+    <div class="container px-4 py-5" id="featured-3">
+        <!-- <h2 class="pb-2 border-bottom">Columns with icons</h2> -->
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3 justify-content-center">
+            <!-- <div class="feature col">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <svg class="bi" width="1em" height="1em">
+                        <use xlink:href="#collection"></use>
+                    </svg>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence
+                    and probably just keep going until we run out of words.</p>
+                <a href="#" class="icon-link">
+                    Call to action
+                    <svg class="bi">
+                        <use xlink:href="#chevron-right"></use>
+                    </svg>
+                </a>
+            </div> -->
+            <div class="feature col">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <svg class="bi" width="1em" height="1em">
+                        <use xlink:href="#people-circle"></use>
+                    </svg>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence
+                    and probably just keep going until we run out of words.</p>
+                <a href="#" class="icon-link">
+                    Call to action
+                    <svg class="bi">
+                        <use xlink:href="#chevron-right"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="feature col">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
+                    <svg class="bi" width="1em" height="1em">
+                        <use xlink:href="#toggles2"></use>
+                    </svg>
+                </div>
+                <h3 class="fs-2 text-body-emphasis">Featured title</h3>
+                <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence
+                    and probably just keep going until we run out of words.</p>
+                <a href="#" class="icon-link">
+                    Call to action
+                    <svg class="bi">
+                        <use xlink:href="#chevron-right"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--  page 3 ends ... create or join card options-->
+    <!-- page 4 starts ... key benefits waala section -->
+    <div class="container px-4 py-5">
+        <h2 class="pb-2 border-bottom">Features with title</h2>
+
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+            <div class="col d-flex flex-column align-items-start gap-2">
+                <h2 class="fw-bold text-body-emphasis">Left-aligned title explaining these awesome features</h2>
+                <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading. We'll add
+                    onto it with another sentence and probably just keep going until we run out of words.</p>
+                <a href="#" class="btn btn-primary btn-lg">Primary button</a>
+            </div>
+
+            <div class="col">
+                <div class="row row-cols-1 row-cols-sm-2 g-4">
+                    <div class="col d-flex flex-column gap-2">
+                        <div
+                            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                            <svg class="bi" width="1em" height="1em">
+                                <use xlink:href="#collection"></use>
+                            </svg>
+                        </div>
+                        <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+                        <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+                    </div>
+
+                    <div class="col d-flex flex-column gap-2">
+                        <div
+                            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                            <svg class="bi" width="1em" height="1em">
+                                <use xlink:href="#gear-fill"></use>
+                            </svg>
+                        </div>
+                        <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+                        <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+                    </div>
+
+                    <div class="col d-flex flex-column gap-2">
+                        <div
+                            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                            <svg class="bi" width="1em" height="1em">
+                                <use xlink:href="#speedometer"></use>
+                            </svg>
+                        </div>
+                        <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+                        <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+                    </div>
+
+                    <div class="col d-flex flex-column gap-2">
+                        <div
+                            class="feature-icon-small d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-4 rounded-3">
+                            <svg class="bi" width="1em" height="1em">
+                                <use xlink:href="#table"></use>
+                            </svg>
+                        </div>
+                        <h4 class="fw-semibold mb-0 text-body-emphasis">Featured title</h4>
+                        <p class="text-body-secondary">Paragraph of text beneath the heading to explain the heading.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- page 4 ends ... key benefits waala section -->
+    <!-- page 5 testimonial section starts -->
+    <!-- Testimonial Section -->
+    <section class="main">
+        <div class="container">
+            <div class="row flex-lg-row align-items-center g-5 py-5">
+                <!-- ============ text section start ==================== -->
+                <div class="col-lg-6">
+                    <h2 class="display-6 fw-bold lh-1 mb-3">
+                        See how we've helped our clients succeed
+                    </h2>
+                    <h5 class="mb-4">More than 1500+ agencies using Mizzle</h5>
+                    <div class="testimonial-wrapper">
+                        <div class="swiper mySwiper" id="mySwiper2">
+                            <div class="swiper-wrapper mb-5">
+                                <div class="swiper-slide">
+                                    <div class="last-animated-card">
+                                        <!-- stars section -->
+                                        <div>
+                                            <img src="./assets/stars.svg" alt="" id="stars-image" />
+                                        </div>
+                                        <!-- para section -->
+                                        <div>
+                                            <p id="testimonial-para">
+                                                I highly recommend Mizzle to anyone looking for a
+                                                high-quality Bootstrap theme.
+                                            </p>
+                                        </div>
+                                        <!-- photo and name section -->
+                                        <div id="testimonial-image-name">
+                                            <img src="./assets/visitors.jpg" alt="" id="testimonial-image" />
+                                            <span id="testimonial-para">By Diwakar Mishra</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="last-animated-card">
+                                        <!-- stars section -->
+                                        <div>
+                                            <img src="./assets/stars.svg" alt="" id="stars-image" />
+                                        </div>
+                                        <!-- para section -->
+                                        <div>
+                                            <p id="testimonial-para">
+                                                Mizzle is the perfect theme for businesses that want
+                                                to create a stylish and functional website.
+                                            </p>
+                                        </div>
+                                        <!-- photo and name section -->
+                                        <div id="testimonial-image-name">
+                                            <img src="./assets/visitors2.jpg" alt="" id="testimonial-image" />
+                                            <span id="testimonial-para">By Oberoy Kapoor</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="last-animated-card">
+                                        <!-- stars section -->
+                                        <div>
+                                            <img src="./assets/stars.svg" alt="" id="stars-image" />
+                                        </div>
+                                        <!-- para section -->
+                                        <div>
+                                            <p id="testimonial-para">
+                                                The best Bootstrap theme we've ever used - it's easy
+                                                to customize and comes with all the features we need.
+                                            </p>
+                                        </div>
+                                        <!-- photo and name section -->
+                                        <div id="testimonial-image-name">
+                                            <img src="./assets/visitors3.jpg" alt="" id="testimonial-image" />
+                                            <span id="testimonial-para">By Muskan</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- text section ends  -->
+                <!-- image section starts -->
+                <div class="col-10 col-sm-10 col-lg-6 mx-auto banner-image-div">
+                    <img src="./assets/last-section.jpg" class="d-block img-fluid banner-image" alt="Bootstrap Themes"
+                        width="700" height="500" loading="lazy" />
+                </div>
+                <!-- image section ends  -->
+            </div>
+        </div>
+    </section>
+    <!-- page 5 testimonial section ends -->
+    <!-- ========== footer section starts ============= -->
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex align-items-center">
+                <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+                    <svg class="bi" width="30" height="24">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                </a>
+                <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+                <li class="ms-3"><a class="text-body-secondary" href="#">
+                        <i class="fa-brands fa-instagram footer-icon"></i>
+                    </a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li class="ms-3"><a class="text-body-secondary" href="#"><i class="fa-brands fa-facebook"></i></a></li>
+            </ul>
+        </footer>
+    </div>
+    <!-- ========== footer section ends ============= -->
+    <!-- swiper js link start -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- swiper js link end -->
+    <!-- typed.js start -->
+    <!-- Typed.js ka CDN link include karna (Ye external library hai) -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- typed.js end -->
+    <!-- pasting the bootstrap script link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <!-- adding our own script file -->
+    <script src="script.js"></script>
+
+</html>
+</body>
+
+</html>

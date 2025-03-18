@@ -1,0 +1,47 @@
+/* ============= testimonial section ================= */
+.testimonial-wrapper {
+    height: max-content;
+    padding: 10px;
+}
+
+#stars-image {
+    height: 15px;
+}
+
+#testimonial-para {
+    font-size: 16px;
+}
+
+#testimonial-image {
+    height: 40px;
+    width: 40px;
+}
+
+.last-animated-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+#testimonial-para {
+    text-align: left;
+}
+
+#testimonial-image-name {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#testimonial-image-name>span {
+    color: #46474A;
+    font-weight: 500;
+}
+
+/* =============== footer section ================= */
+.footer-icon {
+    height: 24px;
+    width: 24px;
+}
