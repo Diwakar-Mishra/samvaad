@@ -1,3 +1,29 @@
+/* ================ organizer or joiner section starts ================= */
+/* .feature-boxes {
+    height: 110px;
+    width: 225px;
+    border-radius: 20px;
+}
+
+@media (min-width: 576px) {
+    .features-row {
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .features-row {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+} */
+
+/* ================ organizer or joiner section ends ================= */
 /* ============= testimonial section ================= */
 .testimonial-wrapper {
     height: max-content;
