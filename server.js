@@ -4,6 +4,11 @@ import dotenv from "dotenv";
 import bodyParser from "body-parser";
 import path from "path";
 import { fileURLToPath } from "url";
+import User from "./src/config.js";
+import bcrypt from "bcrypt";
+// const bcrypt = require("bcrypt");
+
+// const User = require("./src/config"); // Import the Mongoose model
 
 const app = express();
 dotenv.config();
