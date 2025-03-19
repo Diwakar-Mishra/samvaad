@@ -1,7 +1,7 @@
-const express = require('express');
-const path = require('path');
-const bcrypt = require('bcrypt');
-const User = require("./config");  // Import the Mongoose model
+const express = require("express");
+const path = require("path");
+const bcrypt = require("bcrypt");
+const User = require("./src/config"); // Import the Mongoose model
 
 const app = express();
 
@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Use EJS as the view engine
-app.set('view engine', 'ejs');
+app.set("view engine", "ejs");
 
 // Static file
 app.use(express.static("public"));
@@ -39,15 +39,14 @@ app.post("/signup", async (req, res) => {
     // Create a new user
     const newUser = new User({
       email: email,
-      password: hashedPassword
+      password: hashedPassword,
     });
 
     // Save the user to the database
-    await newUser.save(); 
+    await newUser.save();
 
     console.log("User registered:", newUser);
     res.status(201).send("User registered successfully");
-
   } catch (error) {
     console.error("Error registering user:", error);
     res.status(500).send("Error registering user");
@@ -65,11 +64,14 @@ app.post("/login", async (req, res) => {
     }
 
     // Compare the hash password from the database with the plain text password
-    const isPasswordMatch = await bcrypt.compare(req.body.password, check.password);
+    const isPasswordMatch = await bcrypt.compare(
+      req.body.password,
+      check.password
+    );
 
     if (isPasswordMatch) {
       // If the password matches, render the home page
-      res.render("home"); 
+      res.render("home");
     } else {
       // If the password does not match
       return res.send("Incorrect password");
@@ -80,7 +82,6 @@ app.post("/login", async (req, res) => {
     return res.send("Wrong details or error in login");
   }
 });
-
 
 const port = 5000;
 app.listen(port, () => {

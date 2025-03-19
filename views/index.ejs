@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate Platform</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Welcome to Debate Platform</h1>
+
+    <div class="container">
+        <div class="card">
+            <h2>Create a Debate</h2>
+            <form action="/create-debate" method="POST">
+                <input type="text" name="organizer" placeholder="Your Name (Organizer)" required>
+                <input type="text" name="topic" placeholder="Debate Topic" required>
+                <input type="datetime-local" name="time" required>
+                <button type="submit">Create Debate</button>
+            </form>
+        </div>
+
+        <div class="card">
+            <h2>Join a Debate</h2>
+            <form action="/join-debate" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="text" name="code" placeholder="Join Code" required>
+                <button type="submit">Join</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

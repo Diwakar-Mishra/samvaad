@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debate Room</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Debate Room</h1>
+
+    <div class="info-box">
+        <p><strong>Debate Topic:</strong> <%= debate.topic %></p>
+        <p><strong>Organizer:</strong> <%= debate.organizer %></p>
+        <p><strong>Time:</strong> <%= debate.time %></p>
+        <p><strong>Join Code:</strong> <%= debate.joinCode %></p>
+    </div>
+
+    <h2>Participants</h2>
+    <ul>
+        <% debate.participants.forEach(participant => { %>
+            <li><%= participant %></li>
+        <% }); %>
+    </ul>
+
+    <a href="/">Go Back</a>
+</body>
+</html>
