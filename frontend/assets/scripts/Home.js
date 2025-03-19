@@ -26,7 +26,7 @@ var swiper2 = new Swiper("#mySwiper2", {
 // ===================== typing text waala sections =====================
 // Typed.js ko initialize karna aur text ka effect add karna
 var typed = new Typed("#typed-text", {
-    strings: ["Alumni Association", "Job Portal", "Networking Hub"], // Ye words type honge
+    strings: ["AI Integrated", "Debate Analyzer", "GD Analyzer"], // Ye words type honge
     typeSpeed: 50,   // Typing speed (ms me, jitna chhota hoga utni fast typing)
     backSpeed: 30,   // Backspace hone ki speed
     backDelay: 2000, // New text type hone se pehle kitna delay ho
